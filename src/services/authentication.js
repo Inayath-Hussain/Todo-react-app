@@ -1,11 +1,5 @@
 import axios from "axios";
 
-// axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('access')}`
-// axios.interceptors.response.use(null, error => {
-//     window.location = '/login';
-//     localStorage.clear()
-// })
-
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL
 
 export function login(email, password) {
